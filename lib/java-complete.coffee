@@ -32,15 +32,17 @@ class JavaTemplate
         else if type == "method"
             buffer += "public void #{method}("
         else if type == "constructor"
-            buffer += "\n"
+            # buffer += "\n"
             buffer += "public #{className}("
         else if type == "members"
             for param in [0..parameters.length - 1]
                 parameter = parameters[param]
-                if parameter.member
-                    if parameter.type is null
-                        parameter.type = "int"
-                    buffer += "\npublic #{parameter.type} #{parameter.name};"
+                if parameter
+	                if parameter.member
+	                    if parameter.type is null
+	                        parameter.type = "int"
+	                    buffer += "\npublic #{parameter.type} #{parameter.name};"
+            buffer += "\n"
             return buffer
 
 
