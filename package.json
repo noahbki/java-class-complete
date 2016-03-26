@@ -1,7 +1,7 @@
 {
   "name": "java-class-complete",
   "main": "./lib/java-class-complete",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Java add-on for class-complete",
   "repository": "https://github.com/anotherfrog/java-class-complete",
   "license": "MIT",
